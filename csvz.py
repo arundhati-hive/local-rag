@@ -40,4 +40,4 @@ answer as if you are an expert data analyst and do not share irrelevant details.
 '''
         ans=ollama.generate('phi3', prompt)
         response=re.sub(r'<[^>]+>', '', ans['response'])
-        st.write(response)
+        st.write(Cbest,response)
